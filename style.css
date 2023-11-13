@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Montserrat:wght@400;500;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@font-face {
+    font-family: starwar;
+    src: url(./font/starjedi/Starjedi.ttf);
+}
+
+@font-face {
+    font-family: starwar2;
+    src: url(./font/starjout/Starjout.ttf);
+}
+
+@font-face {
+    font-family: elianto;
+    src: url(./font/Elianto-Regular.ttf);
+}
+
+@font-face {
+    font-family: eras;
+    src: url(./font/ErasBoldITC.ttf);
+}
+
+
+*, *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Bebas Neue', cursive;
+    background: black;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 900%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stars1 {
+    position: absolute;
+    left: -30%;
+    width: 100%;
+    height: 140vh;
+    pointer-events: none;
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: -2;
+}
+
+.stars2 {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 140vh;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -3;
+}
+
+.stars3 {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 100%;
+    height: 140vh;
+    pointer-events: none;
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: -4;
+}
+
+.layer1 {
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.layer2 {
+    position: absolute;
+    left: 100%;
+    bottom: -100%;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.square1{
+    position: absolute;
+    width: 50vw;
+    rotate: 180deg;
+    bottom: -300%;
+    z-index: -1;
+}
+
+.gedung1 {
+    position: absolute;
+    width: 50%;
+    bottom: -300%;
+    transform: translateY(0%);
+}
+
+.intro .subtitle {
+    color: white;
+    position: absolute;
+    top: -100%;
+    font-size: 3.3rem;
+    letter-spacing: 1.7rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    transform: translateY(0%);
+}
+
+section .title {
+    position: relative;
+    font-size: 10.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    top: -30%;
+}
+
+.intro h1 span {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #ffffff, 
+    #2f2f2f); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+.layer3 {
+    position: absolute;
+    width: 70%;
+    bottom: -50%;
+    right: -30%;
+}
+
+.layer4 {
+    position: absolute;
+    width: 70%;
+    left: -30%;
+    top: -50%;
+}
+
+.robot {
+    position: absolute;
+    width: 35%;
+    transform: translateY(-120%);
+}
+
+.page1-title {
+    font-size: 18rem;
+    background: linear-gradient(to top, #ffffff, 
+    #3f1bf3); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1rem;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-140%);
+}
+
+.text-fixed {
+    font-size: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 3%;
+    color: #7752FE;
+}
+
+.page1-artikel {
+    position: absolute;
+    font-size: 1.3rem;
+    color: #8E8FFA;
+    width: 40%;
+    text-align: left;
+    bottom: 2rem;
+    left: 3%;
+    font-family: monospace;
+    font-weight: 100;
+    transform: translate(100%, 100%);
+}
+
+.page1-quote {
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    font-size: 2rem;
+    width: 30%;
+    text-align: right;
+    font-family: 'Edu TAS Beginner', cursive;;
+    color: #C2D9FF;
+    font-weight: 600;
+    transform: translate(-100%, 100%);
+}
+
+.bg1 {
+    width: 55%;
+    position: absolute;
+    left: -13%;
+    transform: translateY(-300%);
+}
+
+.bg2 {
+    width: 47%;
+    position: absolute;
+    z-index: 3;
+    transform: translateY(300%);
+}
+
+.bg3{
+    width: 52%;
+    position: absolute;
+    right: -13%;
+    z-index: 5;
+    transform: translateY(-300%);
+}
+
+.tujuan1 {
+    position: absolute;
+    width: 0%;
+    left: 6%;
+    z-index: 1;
+
+}
+
+.tujuan2 {
+    position: absolute;
+    width: 0%;
+    z-index: 4;
+    right: 22%;
+    top: 3%;
+    z-index: 4;
+
+}
+
+.tujuan3 {
+    position: absolute;
+    width: 0%;
+    right: -10%;
+    top: 3%;
+    z-index: 6;
+}
+
+.page2 .text-tujuan1 {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    z-index: 100;
+    bottom: 0;
+    left: 3%;
+}
+
+.page2 .text-tujuan2 {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    z-index: 100;
+    bottom: 0;
+    left: 35%;
+}
+
+.page2 .text-tujuan3 {
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    z-index: 100;
+    bottom: 0;
+    right: 26%;
+}
+
+.page3 {
+    background: linear-gradient(to right, rgb(72, 0, 72), black);
+    z-index: -1;
+}
+
+.layer5 {
+    position: absolute;
+    width: 70%;
+    top: -50%;
+    right: -30%;
+    rotate: -100deg;
+}
+
+.layer6 {
+    position: absolute;
+    width: 70%;
+    left: -30%;
+    bottom: -50%;
+    rotate: -100deg;
+    z-index: 2;
+}
+
+.square2 {
+    position: absolute;
+    width: 65%;
+    bottom: -50%;
+    left: -12%;
+}
+
+.gedung2 {
+    position: absolute;
+    width: 60%;
+    height: 80vh;
+    bottom: -4%;
+    left: -10%;
+    z-index: 1;
+    filter: brightness(0.8);
+    transform: translateY(100%);
+}
+
+.petugas1 {
+    position: absolute;
+    width: 30%;
+    bottom: -5%;
+    z-index: 3;
+    left: 30%;
+    filter: brightness(0.7);
+    transform: translate(150%, 150%);
+}
+
+.page3-title {
+    font-size: 0;
+    background: linear-gradient(to bottom, 
+    #190482, #7752FE, #8E8FFA, #C2D9FF); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 15%;
+    right: 1rem;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+
+.page3-artikel {
+    font-size: 2rem;
+    text-align: right;
+    color: white;
+    width: 40%;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    right: 2rem;
+    top: 34%;
+    transform: translate(-150%, 150%);
+}
+
+.page3-quote {
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    font-size: 2rem;
+    width: 50%;
+    text-align: left;
+    font-family: 'Edu TAS Beginner', cursive;;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    z-index: 5;
+    transform: translateY(150%);
+}
+
+.page4 {
+    background: linear-gradient(to left, rgb(102, 0, 149), black);
+    z-index: -1;
+    position: relative;
+}
+
+.page4::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    content: '';
+    background: linear-gradient(to bottom, black, transparent, transparent);
+}
+
+.square3 {
+    width: 70%;
+    position: absolute;
+    bottom: -68%;
+    right: -15%;
+}
+
+.gedung3 {
+    width: 50%;
+    position: absolute;
+    bottom: -39%;
+    right: -4%;
+    transform: translate(150%);
+}
+
+.petugas2 {
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    transform: translate(100%,-300%);
+}
+
+.petugas3 {
+    width: 36%;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    transform: translate(150%);
+}
+
+.page4-title1 {
+    color: white;
+    font-size: 0;
+    position: absolute;
+    left: 33%;
+    top: 17%;
+    font-weight: 600;
+    transform: translate(-100%, 150%);
+}
+
+.page4-artikel1 {
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    left: 17%;
+    top: 30%;
+    font-family: "Poppins", sans-serif;
+    transform: translate(-160%, 150%);
+}
+
+.page4-title2 {
+    color: white;
+    font-size: 0;
+    position: absolute;
+    left: 22%;
+    bottom: 33%;
+    transform: translate(100%, -150%);
+}
+
+.page4-artikel2 {
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+    text-align: right;
+    position: absolute;
+    left: 11%;
+    bottom: 12%;
+    font-family: "Poppins", sans-serif;
+    transform: translate(160%, -150%);
+}
+
+.page5 {
+    background: linear-gradient(to bottom, rgb(102, 0, 149), black);
+    z-index: -2;
+}
+
+.ring1 {
+    width: 120%;
+    position: absolute;
+    bottom: -30%;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.ring2 {
+    width: 100%;
+    position: absolute;
+    bottom: -17%;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.ring3 {
+    width: 80%;
+    position: absolute;
+    bottom: -12%;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.ring4 {
+    width:60%;
+    position: absolute;
+    bottom: -23%;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.planet1 {
+    width: 8%;
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    z-index: -1;
+}
+
+.planet2 {
+    width: 12%;
+    position: absolute;
+    top: 33%;
+    right: 30%;
+    z-index: -1;
+}
+
+.planet3 {
+    width: 15%;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    z-index: -1;
+}
+
+.planet4 {
+    width: 10%;
+    position: absolute;
+    bottom: -4%;
+    right: 30%;
+    z-index: -1;
+}
+
+.page5-title1 {
+    font-size: 0;
+    color: white;
+    position: absolute;
+    bottom: 17%;
+}
+
+.page5-title2 {
+    font-size: 0;
+    color: white;
+    position: absolute;
+    bottom: 40%;
+}
+
+.page5-title3 {
+    font-size: 0;
+    color: white;
+    position: absolute;
+    top: 33%;
+}
+
+.page5-title4 {
+    font-size: 0;
+    color: white;
+    position: absolute;
+    top: 10%;
+}
+
+.page5-title5 {
+    font-size: 0;
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 17%;
+}
+
+.page5-title6 {
+    font-size: 0;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.page6 {
+    position: relative;
+    background: linear-gradient(to top, rgb(102, 0, 149), black, black);
+    z-index: -5;
+}
+
+.page6::before {
+    height: 100vh;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, transparent, transparent, black);
+    z-index: 2;
+}
+
+.meteor1 {
+    width: 7%;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+
+.meteor2 {
+    width: 12%;
+    position: absolute;
+    top: 14%;
+    right: 40%;
+}
+
+.meteor3 {
+    width: 5%;
+    position: absolute;
+    top: 26%;
+    left: 41%;
+}
+
+.meteor4 {
+    width: 4.5%;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+}
+
+.meteor5 {
+    width: 7%;
+    position: absolute;
+    bottom: 42%;
+    right: 39%;
+}
+
+.meteor6 {
+    width: 5.4%;
+    position: absolute;
+    bottom: 30%;
+    left: 47%;
+}
+
+.meteor7 {
+    width: 8.6%;
+    position: absolute;
+    bottom: 18%;
+    left: 53%;
+}
+
+.meteor8 {
+    width: 6%;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+}
+
+.meteor9 {
+    width: 11%;
+    position: absolute;
+    bottom: -10%;
+    left: 55%;
+}
+
+.page6-title {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 14rem;
+    transform: translateY(0%);
+    opacity: 1;
+    letter-spacing: -0.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to top, #ffffff, #ffffff,
+    #000000); 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    z-index: -1;
+}
+
+.page6-subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1.5rem;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    font-family: elianto;
+}
+
+.dashboard1 {
+    width: 45%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.dashboard2 {
+    width: 35%;
+    bottom: 10%;
+    left: 31%;
+    position: absolute;
+    top: 0;
+}
+
+.dashboard3 {
+    width: 38%;
+    bottom: 10%;
+    right: 29%;
+    position: absolute;
+    top: 0;
+}
+
+.dashboard4 {
+    width: 43%;
+    bottom: 6%;
+    left: 28%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.dashboard5 {
+    width: 43%;
+    bottom: 6%;
+    left: 28%;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+}
+
+.dashboard6 {
+    width: 43%;
+    bottom: 6%;
+    left: 29%;
+    position: absolute;
+    top: 0;
+}
+
+.dashboard7 {
+    width: 43.4%;
+    bottom: 6%;
+    left: 29.1%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+}
+
+.page6-title2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 7rem;
+    font-family: eras;
+    font-weight: bolder;
+    background: white; 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    z-index: 2;
+}
+
+.page6-artikel1 {
+    position: absolute;
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    width: 90%;
+    text-align: center;
+    bottom: 3rem;
+    left: 6%;
+    font-family: monospace;
+    font-weight: 100;
+    z-index: 2;
+}
+
+.ml1 {
+    width: 75%;
+    position: absolute;
+    bottom: -82%;
+    z-index: 3;
+    top: 24%;
+}
+
+.ml2 {
+    position: absolute;
+    top: 16%;
+    left: 12%;
+    z-index: -1;
+}
+
+.ml3 {
+    width: 79%;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    z-index: -1;
+}
+
+.page6-title3 {
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    font-size: 7rem;
+    font-family: eras;
+    font-weight: bolder;
+    background: white; 
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    z-index: 2;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.page6-artikel2 {
+    position: absolute;
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    width: 90%;
+    text-align: center;
+    top: 3rem;
+    left: 4%;
+    font-family: monospace;
+    font-weight: 100;
+    z-index: 2;
+    transform: translateY(0%);
+}
+
+
+@media screen and (max-width: 930px) {
+    #layer1 {
+        left: -100%;
+        bottom: -100%;
+        width: 100%;
+        height: 80vh;
+    }
+    #layer2 {
+        left: 100%;
+        bottom: -100%;
+        width: 100%;
+        height: 70vh;
+    }
+    #square1{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .intro h4 {
+        font-size: 1.8rem;
+    }
+    section .title {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #square1{
+        width: 115%;
+    }
+    #gedung1 {
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #layer1 {
+        left: -100%;
+        bottom: -100%;
+        width: 80%;
+        height: 80vh;
+    }
+    #layer2 {
+        left: 100%;
+        bottom: -100%;
+        width: 120%;
+        height: 70vh;
+    }
+    #square1{
+        width: 155%;
+    }
+    #gedung1 {
+        width: 115%;
+    }
+}
