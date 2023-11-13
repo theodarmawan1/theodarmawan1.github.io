@@ -172,7 +172,7 @@
         var userAgent = navigator.userAgent.toLowerCase();
         
         // Check if the user is on a mobile device
-        if (typeof orientation !== 'undefined' || userAgent.indexOf('mobile') >= 0) {
+        if (window.innerWidth < 600) {
             // Load the mobile message dynamically
             var xhr = new XMLHttpRequest();
             xhr.open('GET', 'error.html', true);
