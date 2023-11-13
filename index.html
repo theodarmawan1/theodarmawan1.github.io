@@ -169,7 +169,23 @@
     <script src="anime.min.js"></script>
     <script src="/app.js"></script>
     <script>
-
+        var userAgent = navigator.userAgent.toLowerCase();
+        
+        // Check if the user is on a mobile device
+        if (typeof orientation !== 'undefined' || userAgent.indexOf('mobile') >= 0) {
+            // Load the mobile message dynamically
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'error.html', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.body.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        } else {
+            // Include the rest of your HTML, CSS, and JS code for desktop users
+            // ...
+    }
     </script>
 </body>
 </html>
